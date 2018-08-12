@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.sonatype.mavenbook.multispring</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.8-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Multi-Spring Chapter Parent Project</name>
+  <modules>
+    <module>simple-parent</module>
+  </modules>
+  <distributionManagement>
+    <repository>
+      <id>warapp-releases</id>
+      <name>warapp-releases</name>
+      <url>http://192.168.56.153:8081/nexus/content/repositories/warapp-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>warapp-snapshots</id>
+      <name>warapp-snapshots</name>
+      <url>http://192.168.56.153:8081/nexus/content/repositories/warapp-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
